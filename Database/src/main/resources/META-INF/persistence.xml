@@ -1,0 +1,27 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="3.1">
+    <persistence-unit name="gestioneFormazionePU">
+
+        <class>org.epicode.Persona</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/epiData"/>
+            <property name="" value=""/>
+
+        </properties>
+
+
+
+
+
+    </persistence-unit>
+</persistence>
+
+        <!--       EPICODE 21/01/2025 11:41 •  Configurazione database -->
+        <!-- <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/formazione" />
+        <property name="javax.persistence.jdbc.user" value="epicode_user" />
+        <property name="javax.persistence.jdbc.password" value="epicode_password" />
+        <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+
+                 Creazione automatica delle tabelle -->
+        <!-- <property name="hibernate.hbm2ddl.auto" value="update" /> -->
