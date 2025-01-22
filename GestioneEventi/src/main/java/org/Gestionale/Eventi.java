@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class Eventi {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(name = "titolo")
     private String titolo;
     @Column(name = "data_evento")
@@ -21,8 +21,10 @@ public class Eventi {
     @Column(name = "numero_massimo_partecipanti")
     private int numeroMassimoPartecipanti;
 
-    public Eventi(long id, String titolo, LocalDate dataEvento, String descrizione, boolean tipoEvento, int numeroMassimoPartecipanti){
-        this.id = id;
+    public Eventi(){
+    }
+
+    public Eventi(String titolo, LocalDate dataEvento, String descrizione, boolean tipoEvento, int numeroMassimoPartecipanti){
         this.titolo = titolo;
         this.dataEvento = dataEvento;
         this.descrizione = descrizione;
@@ -31,13 +33,11 @@ public class Eventi {
     }
 
 
-    public long getId() {
-        return id;
+    public Long getId() {
+        return this.id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
+
 
     public String getTitolo() {
         return titolo;
