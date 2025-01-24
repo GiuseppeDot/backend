@@ -9,7 +9,7 @@
             <!--driver pg -->
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <!-- indirizzo -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/gestioneeventi"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/gestioneEventi"/>
             <!--user e password -->
             <property name="javax.persistence.jdbc.user" value="postgres" />
             <property name="javax.persistence.jdbc.password" value="adminpas" />
